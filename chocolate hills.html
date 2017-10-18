@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+  
+ <div class="benj" style="max-width:500px; height:500px; margin-left:500px; margin-top:50px; margin-bottom:-185px;">
+
+  <img class="mySlides fade" src="img/c1.jpg" style="width:400px; height:400px;border:5px solid gray;">
+  <img class="mySlides fade" src="img/c2.jpg" style="width:400px; height:400px;border:5px solid gray;">
+  <img class="mySlides fade" src="img/c3.jpg" style="width:400px; height:400px;border:5px solid gray;">
+  <img class="mySlides fade" src="img/c4.jpg" style="width:400px; height:400px;border:5px solid gray;">
+  <img class="mySlides fade" src="img/c5.jpg" style="width:400px; height:400px;border:5px solid gray;">
+  <img class="mySlides fade" src="img/c6.jpg" style="width:400px; height:400px;border:5px solid gray;">
+ 
+  </div>
+  
+ <div class="row">
+
+    <div>
+          <h1><a style="margin-left: 150px;">CHOCOLATE HILLS</a></h1>
+          <hr>
+          <h6>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Chocolate Hills are a geological formation in the Bohol province of the Philippines. There are at least 1,260 hills but there may be as many as 1,776 hills spread over an area of more than 50 square kilometres..</br>
+			
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Chocolate Hills is a famous tourist attraction of Bohol. They are featured in the provincial flag and seal to symbolize the abundance of natural attractions in the province. They are in the Philippine Tourism Authority's list of tourist destinations in the Philippines; they have been declared the country's third National Geological Monument and proposed for inclusion in the UNESCO World Heritage List.</p></br>
+		</h6>
+    </div>
+
+
+
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel,1000);    
+}
+</script>
+</body>
+</html>
