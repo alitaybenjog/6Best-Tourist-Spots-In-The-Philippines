@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+  
+
+ <div class="benj" style="max-width:500px; height:500px; margin-left:500px; margin-top:50px; margin-bottom:-185px;">
+
+  <img class="mySlides fade" src="img/v11.jpg" style="width:400px; height:400px;border:10px solid gray;">
+  <img class="mySlides fade" src="img/v22.jpg" style="width:400px; height:400px;border:10px solid gray;">
+  <img class="mySlides fade" src="img/v33.jpg" style="width:400px; height:400px;border:10px solid gray;">
+  <img class="mySlides fade" src="img/v44.jpg" style="width:400px; height:400px;border:10px solid gray;">
+  <img class="mySlides fade" src="img/v55.jpg" style="width:400px; height:400px;border:10px solid gray;">
+  <img class="mySlides fade" src="img/v66.jpg" style="width:400px; height:400px;border:10px solid gray;">
+ 
+  </div>
+</div>
+
+<div class="row">
+
+    <div>
+	<h1><a style="margin-left:  280px;name:DodgerBlue;">VIGAN</a></h1>
+          <hr>
+          <h6>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vigan is a city in the Philippines, on the west coast of Luzon island. It's known for its preserved Spanish colonial and Asian architecture. Calle Crisologo dominates the Mestizo district, with its cobblestone streets, malecón, horse-drawn carriages and rustic mansions. Near the white baroque Vigan Cathedral are Plaza Salcedo, offering fountain light shows, and Plaza Burgos, known for its street-food stalls.</br>
+		  
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In May 2015, Vigan City was officially recognized as one of the New7Wonders Cities together with Beirut, Doha, Durban, Havana, Kuala Lumpur and La Paz. New7Wonders Foundation president and founding member Bernard Weber led a ceremony held at St. Paul Cathedral where he handed a bronze plaque to Vigan Mayor Eva Grace Singson-Medina, signifying the heritage city’s election as one of the world’s wonder cities.</p></br>
+		</h6>
+    </div>
+	
+	
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel,1000);    
+}
+</script>
+	
+</body>
+</html>
