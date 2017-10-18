@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+  
+
+ <div class="benj" style="max-width:500px; height:500px; margin-left:500px; margin-top:50px; margin-bottom:-185px;">
+
+  <img class="mySlides fade" src="img/p1.jpg" style="width:400px; height:400px;border:5px solid gray;">
+  <img class="mySlides fade" src="img/p2.jpg" style="width:400px; height:400px;border:5px solid gray;">
+  <img class="mySlides fade" src="img/p3.jpg" style="width:400px; height:400px;border:5px solid gray;">
+  <img class="mySlides fade" src="img/p4.jpg" style="width:400px; height:400px;border:5px solid gray;">
+  <img class="mySlides fade" src="img/p5.jpg" style="width:400px; height:400px;border:5px solid gray;">
+  <img class="mySlides fade" src="img/p6.jpg" style="width:400px; height:400px;border:5px solid gray;">
+ 
+  </div>
+
+  
+  <div class="row">
+
+    <div>
+          <h1><a style="margin-left: 255px;">PALAWAN</a></h1>
+          <hr>
+          <h6>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Palawan, officially the Province of Palawan is an archipelagic province of the Philippines that is located in the region of MIMAROPA. It is the largest province in the country in terms of total area of jurisdiction.</br>
+			
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The islands of Palawan stretch between Mindoro in the northeast and Borneo in the southwest. It lies between the West Philippine Sea (South China Sea) and the Sulu Sea. The province is named after its largest island, Palawan Island (09°30′N 118°30′E), measuring 450 kilometres (280 mi) long, and 50 kilometres (31 mi) wide.</p></br>
+		</h6>
+    </div>
+	
+	
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel,1000);    
+}
+</script>
+</body>
+</html>
